@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.slide{
+  height: 100vh;
+  width: 100vw;
+  padding: 20vh;
+  background: #F4F5FA;
+  box-sizing: border-box;
+}
+
+.slide textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.section textarea{
+  font-size: 20px;
+}
+
+.section-subtitle textarea{
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.slide textarea::placeholder {
+  color: #000;
+}
+
+.slide textarea:focus::placeholder { 
+  opacity: 0;
+}
+
+/* Internet Explorer 10-11 */
+.slide textarea:-ms-input-placeholder { 
+  color: #000;
+}
+
+/* Microsoft Edge */
+.slide textarea::-ms-input-placeholder { 
+  color: #000;
+}
+
+.slide-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  margin-top: 72px;
+}
+
+.section{
+  width: 25%;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  cursor: move;
+}
+
+.icons-container{
+  width: 200px;
+  max-height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  top: 30px;
+  -webkit-box-shadow: 0px 0px 24px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 24px -16px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 24px -16px rgba(66, 68, 90, 1);
+}
+
+.section-icon{
+  position: relative;
+  cursor: pointer;
+}
+
+.icon{
+  margin: 4px;
+}
+
+.section-icon{
+  margin-bottom: 24px;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.align-horizontal_spread{
+  justify-content: space-between;
+} 
+
+.align-vertical_center{
+  align-items: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.icons-container h2{
+  text-align: left;
+  font-size: 16px;
+}
+
+.icons-container button{
+  position: absolute;
+  right: 4px;
+  top: 8px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pdf{
+  background: #F4F5FA;
+  height: 100vh;
+  padding: 20px;
+}
